@@ -19,8 +19,9 @@ namespace Server
             System.Net.Sockets.TcpListener listener = new TcpListener(localAdd, PORT_NO);
             Console.WriteLine("Listening...");
             listener.Start();
+             
 
-            //---incoming client connected---
+            //---incoming client connected--- 
             TcpClient client = listener.AcceptTcpClient();
 
             //---get the incoming data through a network stream---
